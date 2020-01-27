@@ -1,5 +1,6 @@
-from flask_blog import db;
+from flask_blog import db, login_manager;
 from datetime import datetime;
+
 
 class User(db.Model):
     id = db.Column(db.Integer, primary_key=True)
